@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3e6e6;
+}
+
+.container{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+header {
+    background-color: #6674cc;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1650px;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 185, 56);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.fa-house, .fa-user, .fa-clone, .fa-phone{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+.home-products{
+    margin-left: 700px;
+}
+
+nav a:hover {
+    color: #ffcd00;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #4455aa;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #ffcd00;
+}
+
+.buttons a:first-child {
+    margin-left: 0;
+}
+
+.com {
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.cart-logo {
+    display: flex;
+    flex-direction: column; /* Display the cart text below the logo */
+    align-items: center; /* Center the content horizontally */
+    text-decoration: none; /* Remove text decoration from cart anchor */
+    color: white; /* Set cart text color to white */
+    margin-left: 5px; /* Add margin to the left of the cart */
+    margin-right: 5px; /* Add margin to the right of the cart */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.cart-logo:hover {
+    color: #ffcd00; /* Change the cart text color on hover */
+}
+
+/* Wishlist logo and text */
+.wishlist-logo {
+    display: flex;
+    flex-direction: column; /* Display the wishlist text below the logo */
+    align-items: center; /* Center the content horizontally */
+    text-decoration: none; /* Remove text decoration from wishlist anchor */
+    color: white; /* Set wishlist text color to white */
+    margin-right: 5px; /* Add margin to the right of the wishlist */
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.wishlist-logo:hover {
+    color: #ffcd00; /* Change the wishlist text color on hover */
+}
+
+.cart-icon,
+.wishlist-icon {
+    font-size: 24px;
+}
+
+.cart-text,
+.wishlist-text {
+    font-size: 14px;
+}
+.upper-header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-header{
+    display: flex;
+}
+
+/* New header styles */
+.new-header {
+    background-color: #c2c7eb; /* Background color of the new header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Align search bar and buttons at opposite sides */
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border: 2px solid #b0b0b0; /* Border color of the search bar */
+    border-radius: 5px;
+    padding: 8px 15px; /* Adjusted padding for the search bar */
+    background-color: #e0e3f5; /* Background color of the search bar */
+    transition: border-color 0.3s ease;
+    margin-right: 40px; /* Increase the gap between the search bar and the buttons */
+    width: 600px; /* Set the width of the search bar to 600px */
+}
+
+.search-bar:hover {
+    border-color: #808080; /* Border color when hovering over the search bar */
+}
+
+.search-icon {
+    font-size: 18px; /* Reduce the font size of the search icon */
+    margin-right: 5px;
+}
+
+.search-icon:before {
+    content: "\1F50D"; /* Unicode for the magnifying glass icon */
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 18px; /* Increase the font size of the input field */
+    width: 100%; /* Set the width of the input field to 100% */
+}
+
+/* Buttons for Men, Women, Boys, Girls, Beauty, Appliances, and Furniture */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.nav-buttons li {
+    margin-right: 20px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #4455aa;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-buttons a:hover {
+    color: #ffcd00;
+}
+
+/* New CSS styles for the vertical box on the left side */
+.sidebar {
+    margin-top: 10px; /* Add margin to the top of the box */
+    border: 1px solid #ddd; /* Add a border to the box */
+    padding: 10px; /* Add padding inside the box */
+    background-color: #f7f7f7; /* Background color of the box */
+    display: flex;
+    align-items: center;
+    height: 392px;
+    width: 500px;
+}
+
+.options {
+    padding: 0; /* Remove padding from the list */
+    list-style: none;
+}
+
+.options li {
+    margin-bottom: 5px; /* Add margin between the options */
+}
+
+.options a {
+    text-decoration: none;
+    color: #333;
+    display: flex; /* Align the emoji and text in a row */
+    align-items: center; /* Center the content vertically */
+    font-size: 16px;
+    padding: 5px; /* Add padding to each option */
+}
+
+.options a:hover {
+    color: #ffcd00;
+}
+
+.options a::before {
+    content: attr(emoji); /* Display the emoji before the option text */
+    margin-right: 5px; /* Add some spacing between the emoji and text */
+}
+
+/* Cart logo and text */
+
+
+.box-banner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-banner{
+    margin: 12px;
+    position: relative;
+}
+.hero-image{
+    height: 392px;
+    width: 1370px;
+}
+.hero-text{
+    top: 342px;
+    left: 25px;
+    height: 35px;
+    width: 1320px;
+    position:absolute;
+    background-color: #f5f6f6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.01px solid rgb(180, 179, 179);
+}
+
+.box-line-1, .box-line-2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1598px;
+}
+.boxes{
+    height: 420px;
+    width: 348px;
+    background-color: white;
+    padding: 20px;
+}
+.box-image-1{
+    height: 230px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.box-heading{
+    font-size: 21px;
+}
+.percentage{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 89.36px;
+    background-color: #cc0c39;
+    font-size: 12px;
+    color: white;
+    margin-top: 2px;  
+}
+.deal-para{
+    font-size: 12px;
+    color: #cc0c39;
+    margin-top: 4px;
+}
+.see-deals{
+    height: 19px;
+    width: 308px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+.shop-now-anc{
+    color: #007185;
+}
+.shop-now-anc:hover{
+    color: #c54e4e;
+}
+.box-images{
+    height: 303px;
+    width: 308px;
+    margin-top: 15px;
+}
+.shop-now-div{
+    height: 19px;
+    width: 308px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.horizontal-box-1{
+    height: 275.5px;
+    width: 1598px;
+    background-color: white;
+    padding: 20px;
+}
+.horizontal-images-1{
+    display: flex;
+}
+.books-image{
+    height: 200px;
+    width: 154px;
+    margin: 9.5px;
+}
+
+
+.horizontal-box-2, .horizontal-box-3{
+    height: 275.5px;
+    width: 1598px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+.horizontal-images-2, .horizontal-images-3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-line-3, .box-line-4{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 1598px;
+    margin-top: 20px;
+}
+.gadgets-image{
+    height: 200px;
+    width: 154px;
+    margin: 11px;
+
+}
+.decor-image{
+    height: 200px;
+    width: 207px;
+    margin-top: 20px;
+}
+
+/* ==== Upper Footer ==== */
+
+.upper-footer{
+    height: 49px;
+    width: 100%;
+    background-color: #969ed6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 25px;
+    border-top: 0.01px solid rgb(202, 202, 202);
+
+}
+
+.footer-mid{
+    height: 350px;
+    width: 100%;
+    background-color:#6674cc;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-top: 0.01px solid rgb(202, 202, 202);
+}
+.mid-data{
+    margin-top: 50px;
+    margin-right: 100px;
+}
+.mid-data a{
+    font-size: 14px;
+    color: white;
+}
+.mid-data p{
+    margin-bottom: 12px;
+}
+.mid-data h4{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.mid-data a:hover{
+    color: #060d3b;
+}
+
+.lower-footer{
+    height: 52px;
+    width: 100%;
+    background-color: #4f5786;
+    color: white;
+    font-size: 14px;
+    border-top: 0.01px solid #131a22;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+a:hover{
+    transform: scale(1.05);
+}
+.box-image-1:hover{
+    transform: scale(1.05);
+}
+.box-images:hover{
+    transform: scale(1.05);
+}
+
